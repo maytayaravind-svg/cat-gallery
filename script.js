@@ -10,7 +10,7 @@
   const API_URL = 'https://api.thecatapi.com/v1/images/search';
   const BATCH_SIZE = 12;
   const SKELETON_HEIGHTS = [220, 280, 340, 260, 300, 240, 320, 200, 360, 250, 290, 310];
-  
+
   // PASTE YOUR CAT API KEY HERE (e.g., 'live_abcdefg...')
   const API_KEY = 'YOUR_API_KEY_HERE';
 
@@ -65,7 +65,7 @@
 
     try {
       const headers = {};
-      if (API_KEY && API_KEY !== 'YOUR_API_KEY_HERE') {
+      if (API_KEY && API_KEY !== 'live_1XKZ0ASPkw4zbze5t9r5cSdplRYX08sGk1cmJ4Mj4nXkReu4BoryUpSPlwdCAFzq') {
         headers['x-api-key'] = API_KEY;
       }
 

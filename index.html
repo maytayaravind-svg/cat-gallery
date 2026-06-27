@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cat Gallery — Infinite Purrfection</title>
+  <meta name="description" content="An infinite scrolling gallery of adorable cat images. Browse hundreds of cats, one scroll at a time." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐱</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" id="logo-link">
+        <span class="logo-icon">🐱</span>
+        <span class="logo-text">Cat<span>Gallery</span></span>
+      </a>
+      <div class="header-stats" id="header-stats">
+        <span>🖼️</span>
+        <span><span class="count" id="photo-count">0</span> cats loaded</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero-section">
+    <h1>Infinite <span class="highlight">Purrfection</span></h1>
+    <p>Scroll through an endless stream of adorable cat photos. Every scroll brings a new furry friend.</p>
+  </section>
+
+  <!-- ===== Error Banner ===== -->
+  <div class="error-banner" id="error-banner" role="alert">
+    <span>⚠️ Failed to load cats.</span>
+    <button id="retry-btn">Retry</button>
+  </div>
+
+  <!-- ===== Gallery ===== -->
+  <main class="gallery-container" id="gallery-container">
+    <div class="gallery-grid" id="gallery-grid">
+      <!-- Cards injected by JS -->
+    </div>
+  </main>
+
+  <!-- ===== Loading Indicator ===== -->
+  <div class="load-more-area" id="load-more-area">
+    <div class="spinner" id="spinner"></div>
+    <p>Fetching more cats…</p>
+  </div>
+
+  <!-- ===== Back to Top ===== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">✕</button>
+    <img src="" alt="Full size cat" id="lightbox-img" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
